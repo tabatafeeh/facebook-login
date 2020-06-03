@@ -33,6 +33,73 @@
             <h3>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h3>
         </div>
         <img src="img/fbLoginTela.png" alt="" class="img-left-div">
+        <div class="right-div">
+            <h1>Abra uma conta</h1>
+            <p>É rápido e fácil.</p>
+            <form action="#">
+                <input type="text" class="nome-sob" placeholder="Nome">
+                <input type="text" class="nome-sob" placeholder="Sobrenome">
+                <input type="text" class="email-cel" placeholder="Celular ou email">
+                <input type="text" class="pass" placeholder="Nova senha">
+                <h4>Data de nascimento</h4>
+                <select name="day" id="day">
+                    <option value="0">Dia</option>
+                    <script type="text/javascript">
+                        var days = document.getElementById("day");
+                        var i = 1;
+                        var j = 1;
+
+                        while(i <= 31){
+                            var opt = document.createElement("option");
+                            opt.value = j;
+                            opt.text = i;
+                            days.add(opt, days.options[j]);
+                            if(i == 3){
+                                opt.selected = true;
+                            }
+                            j += 1;
+                            i += 1;
+                        };
+                    </script>
+                </select>
+                <select name="month" id="month">
+                    <option value="0">Mês</option>
+                    <option value="1">Jan</option>
+                    <option value="2">Fev</option>
+                    <option value="3">Mar</option>
+                    <option value="4">Abr</option>
+                    <option value="5">Mai</option>
+                    <option value="6" selected>Jun</option>
+                    <option value="7">Jul</option>
+                    <option value="8">Ago</option>
+                    <option value="9">Set</option>
+                    <option value="10">Out</option>
+                    <option value="11">Nov</option>
+                    <option value="12">Dez</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="0">Ano</option>
+                    <script type="text/javascript">
+                        var years = document.getElementById("year");
+                        var i = 2020;
+                        var j = 1;
+
+                        while(i >= 1905){
+                            var opt = document.createElement("option");
+                            opt.value = j;
+                            opt.text = i;
+                            years.add(opt, years.options[j]);
+                            if(i == 1995){
+                                opt.selected = true;
+                            }
+                            j += 1;
+                            i -= 1;
+                        };
+                    </script>
+                </select>
+                <a class="quest" href="#"><img src="img/question.png" alt=""></a>
+            </form>
+        </div>
     </div>
 </body>
 </html>

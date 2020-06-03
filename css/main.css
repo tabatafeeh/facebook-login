@@ -58,11 +58,12 @@ a {
 .content {
     background: linear-gradient(to bottom, #fff, #d4d9e8);
     height: 100vh;
+    width: 100%;
 }
 
 .left-div {
     width: 448px;
-    margin: 40px 0px 0px 186px;
+    margin: 40px 0px 0px 185px;
     /* T R B L */
 }
 
@@ -75,5 +76,78 @@ h3 {
 }
 
 .img-left-div {
-    margin: -20px 0px 0px 186px;
+    margin: -20px 0px 0px 185px;
+}
+
+.right-div {
+    float: right;
+    width: 500px;
+    margin: -149px 84px 0px 0px;
+}
+
+p {
+    font-family: sans-serif;
+    margin-top: -13px;
+    font-size: 18.5px;
+    word-spacing: 1px;
+    color: #1d2129;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 36.5px;
+    color: #333;
+    word-spacing: -1px;
+}
+
+.nome-sob {
+    width: 183px;
+    height: 32px;
+    margin: 5px 7px 5px 0px;
+    border: solid 1px #bdc7d8;
+    border-radius: 5px;
+    padding: 5px 0px 0px 8.5px;
+}
+
+.email-cel, .pass {
+    width: 387px;
+    height: 32px;
+    border: solid 1px #bdc7d8;
+    margin: 5px 4px 5px 0px;
+    border-radius: 5px;
+    padding: 5px 0px 0px 8.5px;
+}
+
+::placeholder {
+    color: #999;
+    font-size: 18px;
+}
+
+form {
+    margin-top: -4px;
+}
+
+h4 {
+    font-family: sans-serif;
+    color: #90949c;
+    margin: 17px -0.3px 0px 0px;
+}
+
+select {
+    border-color: #ccd0d5;
+    width: 55px;
+    height: 30px;
+    margin-right: -4px;
+    padding-left: 4px;
+    margin-top: 6px;
+}
+
+#year, #month {
+    width: 62px;
+}
+
+.quest img {
+    width: 16px;
+    margin: 13px 294px 0px 0px;
+    float: right;
 }
