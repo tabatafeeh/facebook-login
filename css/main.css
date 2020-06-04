@@ -85,7 +85,7 @@ h3 {
     margin: -149px 84px 0px 0px;
 }
 
-p {
+.parag {
     font-family: sans-serif;
     margin-top: -13px;
     font-size: 18.5px;
@@ -135,19 +135,99 @@ h4 {
 
 select {
     border-color: #ccd0d5;
-    width: 55px;
+    width: 54px;
     height: 30px;
     margin-right: -4px;
-    padding-left: 4px;
+    padding: 2px 0px 0px 4px;
     margin-top: 6px;
 }
 
 #year, #month {
-    width: 62px;
+    width: 63px;
 }
 
 .quest img {
     width: 16px;
     margin: 13px 294px 0px 0px;
     float: right;
+}
+
+.genero {
+    margin: 12px 0px 10px 0px;
+}
+
+label {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #1d2129;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.rd-genero {
+    width: 400px;
+}
+
+#feminino {
+    margin: 4px 2px 0px 9px;
+}
+
+#masculino {
+    margin: 4px 2px 0px 9px;
+}
+
+#personalizado {
+    margin: 4px 2px 0px 5px;
+}
+
+.quest-rd img {
+    margin: 4px 0px 0px 10px;
+    width: 16px;
+}
+
+.av-cadastro {
+    width: 320px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #777;
+    
+}
+
+.cad-p {
+    font-family: sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    margin-top: 10px;
+}
+
+.cad-p a {
+    color: #385898;
+}
+
+.btn-cadastro {
+    width: 194px;
+    height: 39px;
+    padding-top: 2px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #3b6e22;
+    background-color: #69a74e;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: linear-gradient(#67ae55, #578843);    
+    box-shadow: inset 0 1px 1px #a4e388;
+    text-shadow: 0px 1px 2px rgba(0,0,0,.5);
+}
+
+h5 {
+    font-family: sans-serif;
+    color: #666;
+    margin-top: 37px;
+    word-spacing: -1px;
+}
+
+h5 a {
+    color: #385898;
 }

@@ -35,7 +35,7 @@
         <img src="img/fbLoginTela.png" alt="" class="img-left-div">
         <div class="right-div">
             <h1>Abra uma conta</h1>
-            <p>É rápido e fácil.</p>
+            <p class="parag">É rápido e fácil.</p>
             <form action="#">
                 <input type="text" class="nome-sob" placeholder="Nome">
                 <input type="text" class="nome-sob" placeholder="Sobrenome">
@@ -48,13 +48,16 @@
                         var days = document.getElementById("day");
                         var i = 1;
                         var j = 1;
+                        var data = new Date();
+                        var dia = data.getDay();
+                        console.log(dia);
 
                         while(i <= 31){
                             var opt = document.createElement("option");
                             opt.value = j;
                             opt.text = i;
                             days.add(opt, days.options[j]);
-                            if(i == 3){
+                            if(i == dia){
                                 opt.selected = true;
                             }
                             j += 1;
@@ -63,19 +66,28 @@
                     </script>
                 </select>
                 <select name="month" id="month">
-                    <option value="0">Mês</option>
-                    <option value="1">Jan</option>
-                    <option value="2">Fev</option>
-                    <option value="3">Mar</option>
-                    <option value="4">Abr</option>
-                    <option value="5">Mai</option>
-                    <option value="6" selected>Jun</option>
-                    <option value="7">Jul</option>
-                    <option value="8">Ago</option>
-                    <option value="9">Set</option>
-                    <option value="10">Out</option>
-                    <option value="11">Nov</option>
-                    <option value="12">Dez</option>
+                    <script type="text/javascript">
+                        var month = document.getElementById("month");
+                        var data = new Date();
+                        var mes = data.getMonth();
+                        var months = ["Mês", "Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
+                        console.log(months[mes + 1]);
+                        var i = 0;
+                        var j = 0;
+
+                        while(i <= 12){
+                            var opt = document.createElement("option");
+                            opt.value = j;
+                            opt.text = months[i];
+                            month.add(opt, month.options[j]);
+                            i += 1;
+                            j += 1;
+                            console.log(mes);
+                            if(j == mes + 2){
+                                opt.selected = true;
+                            }
+                        }
+                    </script>
                 </select>
                 <select name="year" id="year">
                     <option value="0">Ano</option>
@@ -98,6 +110,21 @@
                     </script>
                 </select>
                 <a class="quest" href="#"><img src="img/question.png" alt=""></a>
+                <h4 class="genero">Gênero</h4>
+                <div class="rd-genero">
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label class="fem" for="feminino">Feminino</label>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label class="masc" for="masculino">Masculino</label>
+                    <input type="radio" id="personalizado" name="genero" value="personalizado">
+                    <label class="pers" for="personalizado">Personalizado</label>
+                    <a class="quest-rd" href="#"><img src="img/question.png" alt=""></a>
+                </div>
+                <div class="av-cadastro">
+                    <p class="cad-p">Ao clicar em Cadastre-se, você concorda com nossos <a href="">Termos, Política de Dados</a> e<a href=""> Política de Cookies.</a>  Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+                    <button class="btn-cadastro">Cadastre-se</button>
+                </div>
+                <h5><a href="">Criar uma Página</a> para uma celebridade, banda ou empresa.</h5>
             </form>
         </div>
     </div>
