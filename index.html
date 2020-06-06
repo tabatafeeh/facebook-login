@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/fbLogo.ico" style="width: 10px;"/>
+    <link rel="shortcut icon" href="img/fbLogo.ico" style="width: 10px;" />
     <link rel="stylesheet" href="css/main.css">
     <title>Facebook – entre ou cadastre-se</title>
 </head>
+
 <body>
     <div class="top">
-        <a href="index.html">
+        <a title="Ir para a página inicial do Facebook" href="index.html">
             <img src="img/logoEsc.png" alt="" class="logo-esc">
         </a>
         <table>
@@ -52,12 +54,12 @@
                         var dia = data.getDay();
                         console.log(dia);
 
-                        while(i <= 31){
+                        while (i <= 31) {
                             var opt = document.createElement("option");
                             opt.value = j;
                             opt.text = i;
                             days.add(opt, days.options[j]);
-                            if(i == dia){
+                            if (i == dia) {
                                 opt.selected = true;
                             }
                             j += 1;
@@ -75,7 +77,7 @@
                         var i = 0;
                         var j = 0;
 
-                        while(i <= 12){
+                        while (i <= 12) {
                             var opt = document.createElement("option");
                             opt.value = j;
                             opt.text = months[i];
@@ -83,7 +85,7 @@
                             i += 1;
                             j += 1;
                             console.log(mes);
-                            if(j == mes + 2){
+                            if (j == mes + 2) {
                                 opt.selected = true;
                             }
                         }
@@ -96,12 +98,12 @@
                         var i = 2020;
                         var j = 1;
 
-                        while(i >= 1905){
+                        while (i >= 1905) {
                             var opt = document.createElement("option");
                             opt.value = j;
                             opt.text = i;
                             years.add(opt, years.options[j]);
-                            if(i == 1995){
+                            if (i == 1995) {
                                 opt.selected = true;
                             }
                             j += 1;
@@ -121,12 +123,224 @@
                     <a class="quest-rd" href="#"><img src="img/question.png" alt=""></a>
                 </div>
                 <div class="av-cadastro">
-                    <p class="cad-p">Ao clicar em Cadastre-se, você concorda com nossos <a href="">Termos, Política de Dados</a> e<a href=""> Política de Cookies.</a>  Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+                    <p class="cad-p">Ao clicar em Cadastre-se, você concorda com nossos <a href="">Termos, Política de
+                            Dados</a> e<a href=""> Política de Cookies.</a> Você pode receber notificações por SMS e
+                        pode cancelar isso quando quiser.</p>
                     <button class="btn-cadastro">Cadastre-se</button>
                 </div>
                 <h5><a href="">Criar uma Página</a> para uma celebridade, banda ou empresa.</h5>
             </form>
         </div>
     </div>
+    <footer>
+        <div class="cont-footer">
+            <ul class="line-o">
+                <li>
+                    <p class="pt-footer">Português (Brasil)</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>English (US)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Español</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Français (France)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Italiano</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>العربية</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Deutsch</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>हिन्दी</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>中文(简体)</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>日本語</p>
+                    </a>
+                </li>
+                    <button class="btn-mais">+</button>
+            </ul>
+            <div class="hr"></div>
+            <ul class="line-t">
+                <li>
+                    <a href="#">
+                        <p>Cadastre-se</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Entrar</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Messenger</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Facebook Lite</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p> Watch </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Pessoas</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Páginas</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Categorias de Página</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Locais</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Jogos</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Locais</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Marketplace</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Facebook Pay</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Grupos</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Oculus</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Portal</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Instagram</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Local</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Campanhas de arrecadação de fundos</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Serviços</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Sobre</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Criar anúncio</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Criar Página</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Desenvolvedores</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Carreiras</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Privacidade</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Cookies</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Opções de anúncio   <img src="naoacheiafoto.jpg" alt="">  </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Termos</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Ajuda</p>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright">Facebook © 2020</p>
+        </div>
+    </footer>
 </body>
+
 </html>

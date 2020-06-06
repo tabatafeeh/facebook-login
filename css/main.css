@@ -1,3 +1,7 @@
+* {
+    outline: none;
+}
+
 body, html {
     margin: 0;
 }
@@ -57,7 +61,7 @@ a {
 
 .content {
     background: linear-gradient(to bottom, #fff, #d4d9e8);
-    height: 100vh;
+    height: 94.3vh;
     width: 100%;
 }
 
@@ -80,9 +84,9 @@ h3 {
 }
 
 .right-div {
-    float: right;
+    /* float: right; */
     width: 500px;
-    margin: -149px 84px 0px 0px;
+    margin: -328px 84px 0px 765px;
 }
 
 .parag {
@@ -219,6 +223,7 @@ label {
     background: linear-gradient(#67ae55, #578843);    
     box-shadow: inset 0 1px 1px #a4e388;
     text-shadow: 0px 1px 2px rgba(0,0,0,.5);
+    cursor: pointer;
 }
 
 h5 {
@@ -230,4 +235,80 @@ h5 {
 
 h5 a {
     color: #385898;
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+}
+
+.cont-footer {
+    width: 988px;
+    height: 140px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: 186px;
+}
+
+.pt-footer {
+    color: #737373;
+}
+
+ul {
+    margin-left: -40px;
+}
+
+li {
+    list-style: none;
+    margin-top: -10px;
+    font-size: 12px;
+    /* position: relative; */
+    font-family: sans-serif;
+    display: inline-block;
+    
+}
+
+li a {
+    color: #385898;
+}
+
+.hr {
+    border-top: 1px solid #dddfe2;
+    height: 8px;
+    margin-top: -15.5px;
+}
+
+.copyright {
+    font-family: sans-serif;
+    font-size: 10.5px;
+    color: #737373;
+}
+
+.line-t {
+    margin-top: 4px;
+    line-height: 5px;
+}
+
+.line-t li {
+    margin-right: 15px;
+    word-spacing: 1px;  
+}
+
+.line-o li {
+    margin-right: 7px;
+}
+
+.btn-mais {
+    height: 18px;
+    width: 29px;
+    border: 1px solid #c8cacc;
+    color: #737373;
+    /* font-size: 23px; */
+    cursor: pointer;
+    background-color: #f5f6f7;
+}
+
+.btn-mais:hover {
+    background-color: #eceff1;
+    transition: linear;
 }
