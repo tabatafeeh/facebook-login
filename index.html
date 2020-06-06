@@ -52,7 +52,6 @@
                         var j = 1;
                         var data = new Date();
                         var dia = data.getDay();
-                        console.log(dia);
 
                         while (i <= 31) {
                             var opt = document.createElement("option");
@@ -73,7 +72,6 @@
                         var data = new Date();
                         var mes = data.getMonth();
                         var months = ["Mês", "Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
-                        console.log(months[mes + 1]);
                         var i = 0;
                         var j = 0;
 
@@ -84,7 +82,6 @@
                             month.add(opt, month.options[j]);
                             i += 1;
                             j += 1;
-                            console.log(mes);
                             if (j == mes + 2) {
                                 opt.selected = true;
                             }
@@ -111,7 +108,8 @@
                         };
                     </script>
                 </select>
-                <a class="quest" href="#"><img src="img/question.png" alt=""></a>
+                <a class="quest" title="Clique para obter mais informações" href="#"><img src="img/question.png"
+                        alt=""></a>
                 <h4 class="genero">Gênero</h4>
                 <div class="rd-genero">
                     <input type="radio" id="feminino" name="genero" value="feminino">
@@ -120,7 +118,8 @@
                     <label class="masc" for="masculino">Masculino</label>
                     <input type="radio" id="personalizado" name="genero" value="personalizado">
                     <label class="pers" for="personalizado">Personalizado</label>
-                    <a class="quest-rd" href="#"><img src="img/question.png" alt=""></a>
+                    <a class="quest-rd" title="Clique para obter mais informações" href="#"><img src="img/question.png"
+                            alt=""></a>
                 </div>
                 <div class="av-cadastro">
                     <p class="cad-p">Ao clicar em Cadastre-se, você concorda com nossos <a href="">Termos, Política de
@@ -138,205 +137,128 @@
                 <li>
                     <p class="pt-footer">Português (Brasil)</p>
                 </li>
-                <li>
-                    <a href="#">
+                <li><a title="English (US)" href="#">
                         <p>English (US)</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <p>Español</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Español">
+                        <p>Spanish</p>
+                    </a></li>
+                <li><a href="#" title="Français (France)">
                         <p>Français (France)</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Italian">
                         <p>Italiano</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Arabic">
                         <p>العربية</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="German">
                         <p>Deutsch</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Hindi">
                         <p>हिन्दी</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Simplified Chinese (China)">
                         <p>中文(简体)</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Japanese">
                         <p>日本語</p>
-                    </a>
-                </li>
-                    <button class="btn-mais">+</button>
+                    </a></li>
+                <button class="btn-mais" title="Mostrar mais idiomas">+</button>
             </ul>
             <div class="hr"></div>
             <ul class="line-t">
-                <li>
-                    <a href="#">
+                <li><a href="#" title="Cadastre-se no Facebook">
                         <p>Cadastre-se</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Entrar no Facebook">
                         <p>Entrar</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Confira o Messenger.">
                         <p>Messenger</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Facebook Lite para Android.">
                         <p>Facebook Lite</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Navegue pelos nossos vídeos do Watch.">
                         <p> Watch </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Navegue no nosso diretório de pessoas.">
                         <p>Pessoas</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Pesquisar nosso diretório de páginas.">
                         <p>Páginas</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#">
                         <p>Categorias de Página</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Confira locais populares no Facebook.">
                         <p>Locais</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Confira os jogos do Facebook.">
                         <p>Jogos</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Navegue pelo nosso diretório de locais.">
                         <p>Locais</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Compre e venda no Facebook Marketplace.">
                         <p>Marketplace</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Learn more about Facebook Pay">
                         <p>Facebook Pay</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Navegue pelo nosso diretório de grupos.">
                         <p>Grupos</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Learn more about Oculus">
                         <p>Oculus</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Saiba mais sobre o Portal do Facebook">
                         <p>Portal</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Confira o Instagram">
                         <p>Instagram</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Navegar pelo nosso diretório de listas locais.">
                         <p>Local</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Doe para causas importantes.">
                         <p>Campanhas de arrecadação de fundos</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Navegue pelo nosso diretório de serviços do Facebook.">
                         <p>Serviços</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#"
+                        title="Leia nosso blog, descubra a central de recursos e encontre oportunidades de trabalho.">
                         <p>Sobre</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Anuncie no Facebook.">
                         <p>Criar anúncio</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Criar uma Página">
                         <p>Criar Página</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Desenvolver em nossa plataforma.">
                         <p>Desenvolvedores</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Dê um passo adiante na sua carreira em nossa incrível empresa.">
                         <p>Carreiras</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Saiba mais sobre sua privacidade e o Facebook.">
                         <p>Privacidade</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Saiba mais sobre cookies e o Facebook">
                         <p>Cookies</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <p>Opções de anúncio   <img src="naoacheiafoto.jpg" alt="">  </p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Saiba mais sobre as Opções de anúncio.">
+                        <p>Opções de anúncio <img src="img/naoacheiafoto.jpg" alt=""> </p>
+                    </a></li>
+                <li><a href="#" title="Leia os nossos termos e políticas.">
                         <p>Termos</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    </a></li>
+                <li><a href="#" title="Acesse nossa Central de Ajuda.">
                         <p>Ajuda</p>
-                    </a>
-                </li>
+                    </a></li>
             </ul>
             <p class="copyright">Facebook © 2020</p>
         </div>
