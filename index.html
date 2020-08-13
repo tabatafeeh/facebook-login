@@ -44,14 +44,15 @@
                 <input type="text" class="email-cel" placeholder="Celular ou email">
                 <input type="text" class="pass" placeholder="Nova senha">
                 <h4>Data de nascimento</h4>
-                <select name="day" id="day">
+                <select title="Dia" name="day" id="day">
                     <option value="0">Dia</option>
                     <script type="text/javascript">
                         var days = document.getElementById("day");
                         var i = 1;
                         var j = 1;
                         var data = new Date();
-                        var dia = data.getDay();
+                        var dia = data.getDate();
+                        // console.log(dia);
 
                         while (i <= 31) {
                             var opt = document.createElement("option");
@@ -66,7 +67,7 @@
                         };
                     </script>
                 </select>
-                <select name="month" id="month">
+                <select title="Mês" name="month" id="month">
                     <script type="text/javascript">
                         var month = document.getElementById("month");
                         var data = new Date();
@@ -88,7 +89,7 @@
                         }
                     </script>
                 </select>
-                <select name="year" id="year">
+                <select title="Ano" name="year" id="year">
                     <option value="0">Ano</option>
                     <script type="text/javascript">
                         var years = document.getElementById("year");
